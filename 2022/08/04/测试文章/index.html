@@ -16,20 +16,18 @@
   <meta name="author" content="WJA">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这是一篇测试文章    （hexo的推荐用法）    根本用不了   这个总是失效呜呜呜呜  第三种是使用绝对路径的markdown用法 第二种相对路径的方法不好用，是HEXO的版本更新导致其不可用嘛？以后还是老老实实用推荐的第一种">
+    <meta name="description" content="这是一篇测试文章  1&amp;#123;% asset_img test.jpg 图片引用方法一 %&amp;#125;   （hexo的推荐用法）  1![图片引用方法二](test.jpg)  根本用不了  这个总是失效呜呜呜呜  1![图片引用方法三](&#x2F;images&#x2F;test.jpg)  第三种是使用绝对路径的markdown用法 第二种相对路径的方法不好用，是HEXO的版本更新导致其不可用嘛？ 建议以">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试文章">
 <meta property="og:url" content="http://example.com/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Tittle">
-<meta property="og:description" content="这是一篇测试文章    （hexo的推荐用法）    根本用不了   这个总是失效呜呜呜呜  第三种是使用绝对路径的markdown用法 第二种相对路径的方法不好用，是HEXO的版本更新导致其不可用嘛？以后还是老老实实用推荐的第一种">
+<meta property="og:description" content="这是一篇测试文章  1&amp;#123;% asset_img test.jpg 图片引用方法一 %&amp;#125;   （hexo的推荐用法）  1![图片引用方法二](test.jpg)  根本用不了  这个总是失效呜呜呜呜  1![图片引用方法三](&#x2F;images&#x2F;test.jpg)  第三种是使用绝对路径的markdown用法 第二种相对路径的方法不好用，是HEXO的版本更新导致其不可用嘛？ 建议以">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.jpg">
-<meta property="og:image" content="http://example.com/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.jpg">
-<meta property="og:image" content="http://example.com/test.jpg">
 <meta property="og:image" content="http://example.com/test.jpg">
 <meta property="og:image" content="http://example.com/images/test.jpg">
 <meta property="article:published_time" content="2022-08-04T15:08:52.000Z">
-<meta property="article:modified_time" content="2022-08-05T09:07:20.911Z">
+<meta property="article:modified_time" content="2022-08-05T09:23:08.587Z">
 <meta property="article:author" content="WJA">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -242,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          102 字
+          193 字
         
       </span>
     
@@ -253,7 +251,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -298,17 +296,20 @@
                 
                 <h2 id="这是一篇测试文章"><a href="#这是一篇测试文章" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h2><img src="/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.jpg" srcset="/img/loading.gif" lazyload class="" title="图片引用方法一">
 
-<blockquote>
-<img src="/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.jpg" srcset="/img/loading.gif" lazyload class="" title="图片引用方法一"> （hexo的推荐用法）
-</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% asset<span class="hljs-emphasis">_img test.jpg 图片引用方法一 %&#125; </span><br></code></pre></td></tr></table></figure>
+
+<p>（hexo的推荐用法）</p>
 <p><img src="/test.jpg" srcset="/img/loading.gif" lazyload alt="图片引用方法二"></p>
-<blockquote>
-<p><img src="/test.jpg" srcset="/img/loading.gif" lazyload alt="图片引用方法二">根本用不了 </p>
-</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">图片引用方法二</span>](<span class="hljs-link">test.jpg</span>)<br></code></pre></td></tr></table></figure>
+
+<p>根本用不了 </p>
 <p>这个总是失效呜呜呜呜</p>
 <p><img src="/images/test.jpg" srcset="/img/loading.gif" lazyload alt="图片引用方法三"></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">图片引用方法三</span>](<span class="hljs-link">/images/test.jpg</span>)<br></code></pre></td></tr></table></figure>
+
 <p>第三种是使用绝对路径的markdown用法</p>
-<p>第二种相对路径的方法不好用，是HEXO的版本更新导致其不可用嘛？以后还是老老实实用推荐的第一种</p>
+<p>第二种相对路径的方法不好用，是HEXO的版本更新导致其不可用嘛？</p>
+<p>建议以后还是老老实实用推荐的第一种</p>
 
                 
               </div>
