@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>写给未来的她</title>
+    <link href="/2022/08/06/%E5%86%99%E7%BB%99%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%A5%B9/"/>
+    <url>/2022/08/06/%E5%86%99%E7%BB%99%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%A5%B9/</url>
+    
+    <content type="html"><![CDATA[<p>你好呀，未来的女朋友。虽然我不知道你什么时候会出现，但我每天都在期待和你相遇。我想你应该也在等待和我相遇吧。<br> 你未来的男朋友长的虽然不帅，但性格脾气都挺好的。你和我相遇后，我想你会发现我的脾气有多么多么的好，可以无条件包容你的小脾气。你生气我会一直哄着你。我是个大直男，有时候或许无法明白你的小心思，希望你呢能给我一点小提示，我或许不能给你最好的，但我会在我力所能及的范围内给你最好的。我并不是一个完美的人。我会特别粘你，看见你和异性朋友走的很近我会瞎想也会吃醋。<br> 在你还未到来的这些日子里，我会学习如何做一个好男友。我已经收藏了许许多多好吃好玩的地方，等你来了，每个空闲的周末和假期我们都可以去玩耍，去吃好吃的。<br> 爱自己是终身浪漫的开始，我不在你身边的日子，也希望你是一个会生活爱自己的人，开朗快乐，积极向上，这样就算我不在你身边，也知道你可以过得很好。<br> 我不知道你什么时候会出现或许下一刻，或许一个月、一年…。我会一直等待着你的出现。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>杂谈</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>杂谈</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Blog介绍</title>
     <link href="/2022/08/05/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/"/>
     <url>/2022/08/05/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</url>
@@ -33,7 +58,7 @@
     <link href="/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
     <url>/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
     
-    <content type="html"><![CDATA[<h2 id="hexo上传图片"><a href="#hexo上传图片" class="headerlink" title="hexo上传图片"></a>hexo上传图片</h2><p>众所周知，hexo上传图片在Markdown编辑器中是无法预览的</p><p>而且markdown插入图片的方式和hexo插入图片的方式也不尽相同，那么我们来试一下在hexo的markdown中插入图片的效果吧</p><h2 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h2><img src="/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.jpg" class="" title="图片引用方法一"><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs django"><span class="hljs-template-tag">&#123;% <span class="hljs-name">asset_img</span> test.jpg 图片引用方法一 %&#125;</span><span class="language-xml"> </span><br></code></pre></td></tr></table></figure><p>（hexo的推荐用法）</p><h2 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h2><p><img src="/test.jpg" alt="图片引用方法二"></p><p><strong>别看了，这张加载不出来……</strong></p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs scss">!<span class="hljs-selector-attr">[图片引用方法二]</span>(test.jpg)<br></code></pre></td></tr></table></figure><p>根本用不了 </p><p>这个总是失效呜呜呜呜</p><h2 id="第三种方法"><a href="#第三种方法" class="headerlink" title="第三种方法"></a>第三种方法</h2><p><img src="/images/test.jpg" alt="图片引用方法三"></p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">![图片引用方法三](<span class="hljs-regexp">/images/</span>test.jpg)<br></code></pre></td></tr></table></figure><p>第三种是使用绝对路径的markdown用法，不过要放在image中或者访问绝对路径是不太方便的</p><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>第二种相对路径的方法不好用是HEXO的版本更新导致其不可用嘛？</p><p>我以后还是老老实实用推荐的<strong>第一种</strong>吧……</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="hexo上传图片"><a href="#hexo上传图片" class="headerlink" title="hexo上传图片"></a>hexo上传图片</h2><p>众所周知，hexo上传图片在Markdown编辑器中是无法预览的</p><p>而且markdown插入图片的方式和hexo插入图片的方式也不尽相同，那么我们来试一下在hexo的markdown中插入图片的效果吧</p><h2 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h2><img src="/2022/08/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.jpg" class="" title="图片引用方法一"><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs django"><span class="hljs-template-tag">&#123;% <span class="hljs-name">asset_img</span> test.jpg 图片引用方法一 %&#125;</span><span class="language-xml"> </span><br></code></pre></td></tr></table></figure><p>（hexo的推荐用法）</p><h2 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h2><p><img src="/test.jpg" alt="图片引用方法二"></p><p><strong>别看了，这张加载不出来……</strong></p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs scss">!<span class="hljs-selector-attr">[图片引用方法二]</span>(test.jpg)<br></code></pre></td></tr></table></figure><p>根本用不了 </p><p>这个总是失效呜呜呜呜</p><h2 id="第三种方法"><a href="#第三种方法" class="headerlink" title="第三种方法"></a>第三种方法</h2><p><img src="/images/test.jpg" alt="图片引用方法三"></p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">![图片引用方法三](<span class="hljs-regexp">/images/</span>test.jpg)<br></code></pre></td></tr></table></figure><p>第三种是使用绝对路径的markdown用法，不过要放在image中或者访问绝对路径是不太方便的</p><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>第一种图片的注释无法显示*出来</p><p>第二种相对路径的方法不好用是HEXO的版本更新导致其不可用嘛？</p><p>我以后还是老老实实用推荐的<strong>第三种</strong>吧</p>]]></content>
     
     
     <categories>
