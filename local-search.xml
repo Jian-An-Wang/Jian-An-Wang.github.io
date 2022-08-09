@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>elan的安装和使用</title>
+    <link href="/2022/08/09/elan%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
+    <url>/2022/08/09/elan%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="ELAN的安装和使用"><a href="#ELAN的安装和使用" class="headerlink" title="ELAN的安装和使用"></a>ELAN的安装和使用</h1><p>在Bilibili上看了ELAN的软件新手入门教程视频，在这里把视频内容整理为文档便于查阅</p><h2 id="ELAN和VLC-media-player的安装"><a href="#ELAN和VLC-media-player的安装" class="headerlink" title="ELAN和VLC  media player的安装"></a>ELAN和VLC  media player的安装</h2><h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>ELAN官方网站下载</p><p><a href="https://archive.mpi.nl/tla/elan/download">ELAN下载</a></p><p>VLC media player官方网站下载</p><p><a href="https://www.videolan.org/vlc/">VLC media player下载</a></p><p>注意：ELAN官网需要挂梯子，不然不能访问</p><p>按照提示步骤安装即可</p><h2 id="使用VLC-media-player处理视频"><a href="#使用VLC-media-player处理视频" class="headerlink" title="使用VLC media player处理视频"></a>使用VLC media player处理视频</h2><p>视频导入到ELAN中时，只会显示视频的轨道，不会显示音频的轨道，很多时候我们也需要对视频的音频轨道进行标记，而VLC media player可以导出音频的轨道。换句话说，VLC media player是ELAN 的辅助工具。</p><h3 id="视频转音频"><a href="#视频转音频" class="headerlink" title="视频转音频"></a>视频转音频</h3><p>在VLC media player中点击媒体、转换，选中视频后将音频文件类型存为wav就可以了。</p><p>建议音频的名称和视频名称相同。</p><h2 id="使用ELAN处理视频"><a href="#使用ELAN处理视频" class="headerlink" title="使用ELAN处理视频"></a>使用ELAN处理视频</h2><h3 id="导入和保存"><a href="#导入和保存" class="headerlink" title="导入和保存"></a>导入和保存</h3><p>依次点击文件、新建，选择需要用到的视频，添加到已选文件中，然后再把音频文件也添加进去。</p><p>点击保存，选择保存的路径即可。（建议保存文件的名称和源文件相同）</p><h3 id="层的添加"><a href="#层的添加" class="headerlink" title="层的添加"></a>层的添加</h3><p>点击 层 可以进行层的添加和删除。通过鼠标可以选中视频下方的进度条，右键对选中的片段添加层以及注释。</p><h3 id="层的统计"><a href="#层的统计" class="headerlink" title="层的统计"></a>层的统计</h3><p>点击 查看 可以对已经标记的<strong>单个文件</strong>进行层的统计和注释进行查看。</p><p>对于<strong>多个文件</strong>点击 文件、多文件处理 选择需要查看的文件，可以查看对多个文件的统计。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+      <category>原创</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>安装</tag>
+      
+      <tag>配置</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>labelImg的安装和使用</title>
     <link href="/2022/08/08/labelImg%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
     <url>/2022/08/08/labelImg%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
