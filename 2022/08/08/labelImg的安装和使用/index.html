@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          undefined 字
+          1.2k 字
         
       </span>
     
@@ -295,11 +295,11 @@
 <p>注释以 PASCAL VOC 格式保存为 XML 文件，这是<a target="_blank" rel="noopener" href="http://www.image-net.org/">ImageNet</a>使用的格式。此外，它还支持 YOLO 和 CreateML 格式。</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="在Windows中安装labelImg"><a href="#在Windows中安装labelImg" class="headerlink" title="在Windows中安装labelImg"></a>在Windows中安装labelImg</h3><p>下载并安装Anaconda（这是要用来使用conda的安装功能）</p>
 <p>打开C盘打开GitBush（其他位置也可以），输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/tzutalin/labelImg</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/tzutalin/labelImg<br></code></pre></td></tr></table></figure>
 
 <p>打开Anaconda Prompt，进入labelImg目录</p>
 <p><strong>依次输入</strong>：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda install pyqt=5</span><br><span class="line">conda install -c anaconda lxml</span><br><span class="line">pyrcc5 -o libs/resources.py resources.qrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda install pyqt=5<br>conda install -c anaconda lxml<br>pyrcc5 -o libs/resources.py resources.qrc<br></code></pre></td></tr></table></figure>
 
 <p>按照提示依次输入，遇到（y&#x2F;n）时输入Y，这样就安装好了</p>
 <p>若安装失败，提示conda install packages failed，可以参考<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/61134985/conda-install-packages-error-collecting-package-metadata-current-repodata-json"><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/61134985/conda-install-packages-error-collecting-package-metadata-current-repodata-json">conda install packages error: Collecting package metadata (current_repodata.json): failed</a></a> （一般来说如果挂着梯子把梯子关闭就好了）</p>
