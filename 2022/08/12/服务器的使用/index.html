@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2022/08/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/success.jpg">
 <meta property="article:published_time" content="2022-08-12T13:06:36.000Z">
-<meta property="article:modified_time" content="2022-08-12T13:32:24.042Z">
+<meta property="article:modified_time" content="2022-08-12T13:44:08.280Z">
 <meta property="article:author" content="WJA">
 <meta property="article:tag" content="YOLO">
 <meta property="article:tag" content="服务器">
@@ -239,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          647 字
+          667 字
         
       </span>
     
@@ -299,14 +299,14 @@
 <h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p>OSS：用于上传、下载自己的文件，虽然只能传压缩包，但速度比较快。</p>
 <p>XShell：用于远程控制服务器。由于服务器一般都是Linux的，因此我们只需要在终端进行操作即可。（这个时候就体现出Linux的指令的使用的重要性了）</p>
 <p>Xftp：协助XShell工作，用于本地主机和服务器之间小型文件的传输。</p>
-<h2 id="部署服务器"><a href="#部署服务器" class="headerlink" title="部署服务器"></a>部署服务器</h2><p>在某网站逛了一圈，租用GPU的价格普遍在1~4rmb&#x2F;h间浮动，性能越好价格也就越贵。建议选用3060以上的显卡，因为时间真的很重要2333</p>
+<h2 id="部署服务器"><a href="#部署服务器" class="headerlink" title="部署服务器"></a>部署服务器</h2><p>在某网站逛了一圈，租用GPU的价格普遍在1~4rmb&#x2F;h间浮动，性能越好价格也就越贵。我建议选用3060以上的显卡，因为节省时间真的很重要2333（踩过坑的过来人如是说</p>
 <p>我部署了TITAN X的机器，启动之前可以选择需要搭建的环境。尽管需要的大部分依赖都已经被安装好了，但仍然需要按照requirements.txt中的要求再安装一遍。</p>
 <p>我用到的是Python、pytorch等工具</p>
 <p>调整好源代码中的参数，一切准备就绪~</p>
-<h2 id="开炮！"><a href="#开炮！" class="headerlink" title="开炮！"></a>开炮！</h2><p>鸡冻的时刻到了，在终端输入train.py</p>
+<h2 id="开炮！"><a href="#开炮！" class="headerlink" title="开炮！"></a>开炮！</h2><p>鸡冻的时刻到了，在终端输入python train.py</p>
 <p>在服务器上程序运行成功！</p>
 <p><img src="/2022/08/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/success.jpg" srcset="/img/loading.gif" lazyload alt="success"></p>
-<p>经过了1h49m的哟行，，，终于结束了</p>
+<p>经过了1h49m的运行，，，终于结束了</p>
 <p>得到的权重保存到了runs中。</p>
 <h2 id="把需要的文件传输回来"><a href="#把需要的文件传输回来" class="headerlink" title="把需要的文件传输回来"></a>把需要的文件传输回来</h2><p>使用zip进行压缩runs文件夹</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip -r runs.zip /hy-tmp/yolov5/runs<br></code></pre></td></tr></table></figure>
