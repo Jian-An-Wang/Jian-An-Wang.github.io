@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>CVAT的安装</title>
+    <link href="/2022/08/14/CVAT%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <url>/2022/08/14/CVAT%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    
+    <content type="html"><![CDATA[<h1 id="CVAT在windows下的安装"><a href="#CVAT在windows下的安装" class="headerlink" title="CVAT在windows下的安装"></a>CVAT在windows下的安装</h1><p>CVAT(computer vision annotation tool)是一个在docker下运行的图像标注软件，它的优势在于免费开源以及可远程操作。</p><h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><p>安装 WSL2（Linux 的 Windows 子系统）参考<a href="https://docs.microsoft.com/windows/wsl/install-win10">这个官方指南</a>。WSL2 需要 Windows 10 版本 2004 或更高版本。注意：除非需要，否则您可能不必安装 Linux 发行版。</p><h3 id="安装WSL2"><a href="#安装WSL2" class="headerlink" title="安装WSL2"></a>安装WSL2</h3><p>在<strong>管理员 PowerShell</strong> 或 Windows 命令提示符中输入此命令，然后重启计算机来安装运行适用于 Linux 的 Windows 子系统 (WSL) 所需的全部内容。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">wsl --install<br></code></pre></td></tr></table></figure><blockquote><p>上述命令仅在完全未安装 WSL 时才有效，如果运行 <code>wsl --install</code> 并查看 WSL 帮助文本，请尝试运行 <code>wsl --list --online</code> 以查看可用发行版列表并运行 <code>wsl --install -d &lt;DistroName&gt;</code> 以安装发行版。 若要卸载 WSL，请参阅<a href="https://docs.microsoft.com/zh-CN/windows/wsl/troubleshooting#uninstall-legacy-version-of-wsl">卸载旧版 WSL</a> 或<a href="https://docs.microsoft.com/zh-CN/windows/wsl/basic-commands#unregister-or-uninstall-a-linux-distribution">注销或卸载 Linux 发行版</a>。</p></blockquote><h3 id="下载并安装Docker"><a href="#下载并安装Docker" class="headerlink" title="下载并安装Docker"></a>下载并安装Docker</h3><p>双击<code>Docker for Windows Installer</code>运行安装程序。更多说明可以在<a href="https://docs.docker.com/docker-for-windows/install/">这里</a>找到。</p><p>安装完毕后记得打开Docker</p><h3 id="下载并安装Git"><a href="#下载并安装Git" class="headerlink" title="下载并安装Git"></a>下载并安装Git</h3><p>下载并安装<a href="https://www.google.com/chrome/">谷歌浏览器</a>。</p><p>Chrome是<strong>唯一受 CVAT 支持的</strong>浏览器。</p><h3 id="部署CVAT"><a href="#部署CVAT" class="headerlink" title="部署CVAT"></a>部署CVAT</h3><p>从 <a href="https://github.com/opencv/cvat">GitHub 存储</a><em>库克隆 CVAT</em>源代码</p><p>在任意文件夹下打开 Git Bush，执行以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/opencv/cvat<br><span class="hljs-built_in">cd</span> cvat<br></code></pre></td></tr></table></figure><p>运行 docker 容器。从 DockerHub 下载最新的 CVAT 版本和其他所需的镜像（如 postgres、redis 等）并创建容器<strong>需要亿些时间</strong>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker-compose up -d<br></code></pre></td></tr></table></figure><p>创建一个超级用户。超级用户可以使用管理面板将正确的组分配给其他用户。请使用以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">winpty docker <span class="hljs-built_in">exec</span> -it cvat bash -ic <span class="hljs-string">&#x27;python3 ~/manage.py createsuperuser&#x27;</span><br></code></pre></td></tr></table></figure><p>按照提示输入邮箱、用户名和密码即可。</p><p>打开已安装的 Google Chrome 浏览器并转到<a href="http://localhost:8080/">localhost:8080</a>。</p><p>在登录页面上输入超级用户的登录名&#x2F;密码，然后点按Login按钮。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>原创</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>安装</tag>
+      
+      <tag>配置</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>服务器的使用</title>
     <link href="/2022/08/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <url>/2022/08/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
