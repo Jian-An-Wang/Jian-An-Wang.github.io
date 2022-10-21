@@ -16,26 +16,24 @@
   <meta name="author" content="WJA">
   <meta name="keywords" content="">
   
-    <meta name="description" content="YOLO学习笔记本文章主要用来写YOLOv5的实操过程（因为理论知识不太会2333），主要用于记录学习的过程 众所周知，YOLO是一个用来实时识别图像的一个工具，因为其速度快、效率高高可以用在很多领域。 YOLO v5.0的曲折安装过程YOLO v5.0的github官网，复制需要clone地址 1git clone https:&#x2F;&#x2F;github.com&#x2F;ultralytics&#x2F;yolov5.gi">
+    <meta name="description" content="约瑟夫环时间限制2 S内存限制10000 Kb  问题描述习题集P79。编号为1,2,…,n的n个人按顺时针方向围坐一圈，每人持有一个密码（正整数）。现在给定一个随机数m&gt;0，从编号为1的人开始，按顺时针方向1开始顺序报数，报到m时停止。报m的人出圈，同时留下他的密码作为新的m值，从他在顺时针方向上的下一个人开始，重新从1开始报数，如此下去，直至所有的人全部出圈为止。问题输入输入数据第一行为">
 <meta property="og:type" content="article">
-<meta property="og:title" content="YOLO学习笔记">
-<meta property="og:url" content="http://example.com/2022/08/10/YOLO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="XDOJ-278约瑟夫环">
+<meta property="og:url" content="http://example.com/2022/10/21/XDOJ-278%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/index.html">
 <meta property="og:site_name" content="WJA&#39;Blog">
-<meta property="og:description" content="YOLO学习笔记本文章主要用来写YOLOv5的实操过程（因为理论知识不太会2333），主要用于记录学习的过程 众所周知，YOLO是一个用来实时识别图像的一个工具，因为其速度快、效率高高可以用在很多领域。 YOLO v5.0的曲折安装过程YOLO v5.0的github官网，复制需要clone地址 1git clone https:&#x2F;&#x2F;github.com&#x2F;ultralytics&#x2F;yolov5.gi">
+<meta property="og:description" content="约瑟夫环时间限制2 S内存限制10000 Kb  问题描述习题集P79。编号为1,2,…,n的n个人按顺时针方向围坐一圈，每人持有一个密码（正整数）。现在给定一个随机数m&gt;0，从编号为1的人开始，按顺时针方向1开始顺序报数，报到m时停止。报m的人出圈，同时留下他的密码作为新的m值，从他在顺时针方向上的下一个人开始，重新从1开始报数，如此下去，直至所有的人全部出圈为止。问题输入输入数据第一行为">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2022/08/10/YOLO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pic1.png">
-<meta property="article:published_time" content="2022-08-10T15:09:08.000Z">
-<meta property="article:modified_time" content="2022-08-23T05:14:11.466Z">
+<meta property="article:published_time" content="2022-10-21T11:03:49.000Z">
+<meta property="article:modified_time" content="2022-10-21T11:04:37.548Z">
 <meta property="article:author" content="WJA">
-<meta property="article:tag" content="YOLO">
+<meta property="article:tag" content="链表">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2022/08/10/YOLO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pic1.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>YOLO学习笔记 - WJA&#39;Blog</title>
+  <title>XDOJ-278约瑟夫环 - WJA&#39;Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="YOLO学习笔记"></span>
+            <span id="subtitle" data-typed-text="XDOJ-278约瑟夫环"></span>
           
         </div>
 
@@ -226,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-10 23:09" pubdate>
-          2022年8月10日 晚上
+        <time datetime="2022-10-21 19:03" pubdate>
+          2022年10月21日 晚上
         </time>
       </span>
     
@@ -238,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.9k 字
         
       </span>
     
@@ -286,46 +284,28 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">YOLO学习笔记</h1>
+            <h1 style="display: none">XDOJ-278约瑟夫环</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="YOLO学习笔记"><a href="#YOLO学习笔记" class="headerlink" title="YOLO学习笔记"></a>YOLO学习笔记</h1><p>本文章主要用来写YOLOv5的实操过程（因为理论知识不太会2333），主要用于记录学习的过程</p>
-<p>众所周知，YOLO是一个用来实时识别图像的一个工具，因为其速度快、效率高高可以用在很多领域。</p>
-<h2 id="YOLO-v5-0的曲折安装过程"><a href="#YOLO-v5-0的曲折安装过程" class="headerlink" title="YOLO v5.0的曲折安装过程"></a>YOLO v5.0的曲折安装过程</h2><p>YOLO v5.0的github<a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/tree/v5.0">官网</a>，复制需要clone地址</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/ultralytics/yolov5.git<br></code></pre></td></tr></table></figure>
+                <h1 id="约瑟夫环"><a href="#约瑟夫环" class="headerlink" title="约瑟夫环"></a>约瑟夫环</h1><p>时间限制<br>2 S<br>内存限制<br>10000 Kb </p>
+<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>习题集P79。编号为1,2,…,n的n个人按顺时针方向围坐一圈，每人持有一个密码（正整数）。现在给定一个随机数m&gt;0，从编号为1的人开始，按顺时针方向1开始顺序报数，报到m时停止。报m的人出圈，同时留下他的密码作为新的m值，从他在顺时针方向上的下一个人开始，重新从1开始报数，如此下去，直至所有的人全部出圈为止。<br>问题输入<br>输入数据第一行为两个正整数n和m，分别表示人的个数及初始随机数，每组数据的第二行为n个整数，表示每个人持有的密码。<br>问题输出<br>用一行输出n个整数表示依次出圈人的编号，整数之间用空格分隔<br>输入样例<br>7 20<br>3 1 7 2 4 8 4</p>
+<p>输出样例<br>6 1 4 7 2 3 5<br>提示<br>使用不带头节点的循环链表 </p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ol>
+<li>创建一个单向循环链表Node，根据题目中的数据结构，在节点中创建密码data、序号num、下一节点的地址的变量next；</li>
+<li>对链表进行赋值。使用CreateList()和InitNode()函数，根据输入的数据进行存储密码。并且对每个节点进行标序号（从1开始，1，2，3，4……）；</li>
+<li>根据题意，创建DeleteNode()和Remove()函数。其中DeleteNode(Node *p)函数用来传入需要删除的节点的地址，遍历整个链表，达到删除该节点的目的。而Remove()则是根据题意，根据m之确定循环次数，循环链表结束后删除对应的节点。删除的同时打印该节点的序号。</li>
+</ol>
+<p>测试数据：</p>
+<p>第一组：</p>
+<p>输入：</p>
+<p><em>7 20</em></p>
+<p><em>3 1 7 2 4 8 4</em></p>
+<p>输出：</p>
+<p><em>6 1 4 7 2 3 5</em></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdlib.h&gt;</span></span><br><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> <span class="hljs-title class_">Node</span><br>&#123;<br>    <span class="hljs-type">int</span> data;<br>    <span class="hljs-type">int</span> num;<br>    <span class="hljs-keyword">struct</span> <span class="hljs-title class_">Node</span> *next;<br>&#125; Node;<br><span class="hljs-function">Node *<span class="hljs-title">InitNode</span><span class="hljs-params">(Node *p)</span></span><br><span class="hljs-function"></span>&#123;<br>    p = (Node *)<span class="hljs-built_in">malloc</span>(<span class="hljs-built_in">sizeof</span>(Node));<br>    p-&gt;data = <span class="hljs-number">-1</span>;<br>    p-&gt;num = <span class="hljs-number">-1</span>;<br>    p-&gt;next = <span class="hljs-literal">NULL</span>;<br>    <span class="hljs-keyword">return</span> p;<br>&#125;<br><span class="hljs-function">Node *<span class="hljs-title">CreateList</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span></span><br><span class="hljs-function"></span>&#123;<br>    Node *p;<br>    p = <span class="hljs-built_in">InitNode</span>(p);<br>    Node *q = p;<br>    Node *head = p;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)<br>    &#123;<br>        <span class="hljs-keyword">if</span> (p-&gt;next != <span class="hljs-literal">NULL</span>)<br>        &#123;<br>            p = p-&gt;next;<br>        &#125;<br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;p-&gt;data);<br>        p-&gt;num = i + <span class="hljs-number">1</span>;<br>        q = <span class="hljs-built_in">InitNode</span>(q);<br>        p-&gt;next = q;<br>    &#125;<br>    p-&gt;next = head;<br>    <span class="hljs-keyword">return</span> head;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">DeleteNode</span><span class="hljs-params">(Node *p)</span></span><br><span class="hljs-function"></span>&#123;<br>    Node *q = p;<br>    <span class="hljs-keyword">while</span> (q-&gt;next != p)<br>    &#123;<br>        q = q-&gt;next;<br>    &#125;<br>    q-&gt;next = q-&gt;next-&gt;next;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">Remove</span><span class="hljs-params">(Node *head, <span class="hljs-type">int</span> n, <span class="hljs-type">int</span> m)</span></span><br><span class="hljs-function"></span>&#123;<br>    Node *p = head;<br>    Node *q;<br>    <span class="hljs-type">int</span> i, index = m;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; n; j++)<br>    &#123;<br><br>        <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; index - <span class="hljs-number">1</span>; i++)<br>        &#123;<br>            p = p-&gt;next;<br>        &#125;<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>, p-&gt;num);<br>        index = p-&gt;data;<br>        q = p;<br>        p = p-&gt;next;<br>        <span class="hljs-built_in">DeleteNode</span>(q);<br>        <span class="hljs-built_in">free</span>(q);<br>    &#125;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-type">int</span> m, n;<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%d&quot;</span>, &amp;n, &amp;m);<br>    Node *head = <span class="hljs-built_in">CreateList</span>(n);<br>    <span class="hljs-comment">// for (int i = 0; i &lt; n; i++)</span><br>    <span class="hljs-comment">// &#123;</span><br>    <span class="hljs-comment">//     printf(&quot;%d %d %d\n&quot;, head-&gt;data, head-&gt;next, head-&gt;num);</span><br>    <span class="hljs-comment">//     head = head-&gt;next;</span><br>    <span class="hljs-comment">// &#125;</span><br>    <span class="hljs-built_in">Remove</span>(head, n, m);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>这时我们就会得到yolov5的文件夹</p>
-<p>用pycharm打开它，在<strong>终端</strong>输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip install -r requirement.txt<br></code></pre></td></tr></table></figure>
-
-<p>这个会有亿点点慢，耐心等待即可。</p>
-<p>当最后出现<strong>Success</strong>的字样时，也就安装完毕了~</p>
-<p>安装完毕运行一次dectect.py试试，若出现错误可以根据提示进行操作。运行完毕后可以在run里面找到自己的运行结果。</p>
-<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><h4 id="安装依赖包时出现警告"><a href="#安装依赖包时出现警告" class="headerlink" title="安装依赖包时出现警告"></a>安装依赖包时出现警告</h4><blockquote>
-<p>WARNING: Ignore distutils configs in setup.cfg due to encoding errors.</p>
-</blockquote>
-<p>编码问题，在终端输入<strong>chcp 65001</strong>即可</p>
-<h4 id="找不到需要的module"><a href="#找不到需要的module" class="headerlink" title="找不到需要的module"></a>找不到需要的module</h4><p>明明已经成功安装了requirements.txt中的模块，为什么还是在Pycharm中提示No such module捏？</p>
-<p>这是因为我的电脑中有两个Python，一个是我在上学期学Python的时候自己单独下载的Python，另外一个是Anaconda中的Python。而我下载的Module在Anaconda中。</p>
-<p>解决方法：</p>
-<p>在Pycharm中把<strong>解释器</strong>的路径改为Anaconda的Python路径，大概是在users&#x2F;anaconda3&#x2F;lib中。</p>
-<hr>
-<p>OK，到这里安装过程就结束了</p>
-<p>下面可以准备进行数据标注（对图片打标签）的学习了</p>
-<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>利用LabelImg进行数据标注（前两天学过），记得把模式调成YOLO，这样就会生成YOLO可以识别的txt格式的标签了。</p>
-<h2 id="修改配置文件-改参数"><a href="#修改配置文件-改参数" class="headerlink" title="修改配置文件(改参数)"></a>修改配置文件(改参数)</h2><p>去data中找到coco128.yml，把里面的东西复制出来，粘贴到新的文件中，<strong>例如 wzry.yaml</strong></p>
-<p>wzry_parameter.yaml需要修改的内容：</p>
-<p>nc是标签名个数</p>
-<p>names标签的名字</p>
-<p>这次就可以了</p>
-<p>再去models中找到一份模板，例如yolov5x.yaml，改名为wzry_model.yaml</p>
-<h2 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h2><p>由于本人电脑算力不够，便放在了付费GPU服务器中计算。</p>
-<p>去train.py中修改里面的Argparse参数即可（主要是一些关于路径的问题）</p>
-<p><img src="/2022/08/10/YOLO%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pic1.png" srcset="/img/loading.gif" lazyload alt="改参数啦！！改参数~~~"></p>
-<p>训练完毕后，进入到runs里面的exp文件夹（exp1、exp2等等是按照训练先后不同加以区分），其中last.pt和best.pt就是得到的权重文件。得到了权重，我们就可以开始识别了。</p>
-<h2 id="识别"><a href="#识别" class="headerlink" title="识别"></a>识别</h2><p>detect.py就是用来识别的文件，和train.py同理，我们可以修改main函数里面argparse中的路径用来对图片或者视频进行识别。导出的文件依然在runs里面。</p>
 
                 
               </div>
@@ -344,7 +324,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
+  <a href="/categories/XDOJ/" class="category-chain-item">XDOJ</a>
   
   
 
@@ -359,7 +339,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/YOLO/">#YOLO</a>
+        <a href="/tags/%E9%93%BE%E8%A1%A8/">#链表</a>
       
     </div>
   
@@ -371,8 +351,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>YOLO学习笔记</div>
-      <div>http://example.com/2022/08/10/YOLO学习笔记/</div>
+      <div>XDOJ-278约瑟夫环</div>
+      <div>http://example.com/2022/10/21/XDOJ-278约瑟夫环/</div>
     </div>
     <div class="license-meta">
       
@@ -384,7 +364,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年8月10日</div>
+          <div>2022年10月21日</div>
         </div>
       
       
@@ -414,18 +394,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/12/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/" title="服务器的使用">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">服务器的使用</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/08/09/elan%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="elan的安装和使用">
-                        <span class="hidden-mobile">elan的安装和使用</span>
+                      <a href="/2022/08/14/CVAT%E7%9A%84%E5%AE%89%E8%A3%85/" title="CVAT的安装">
+                        <span class="hidden-mobile">CVAT的安装</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
